@@ -53,17 +53,6 @@ export default function Home({ navigation }) {
                     style={styles.image3}
                   />
           </View>
-          {/* <Pressable onPress={() => navigation.navigate("Detail")}>
-            <View style={styles.bu}>
-              <View style={styles.circle1}>
-                <AntDesign name="plus" style={styles.plus} />
-              </View>
-              <View style={styles.vw2}>
-                <Text>Бүтээгдэхүүн</Text>
-                <Text>үйлчилгээ</Text>
-              </View>
-            </View>
-          </Pressable> */}
         </ScrollView>
         <View>
         <ScrollView horizontal={true} style={styles.scroll1} showsVerticalScrollIndicator={false}>
@@ -142,18 +131,21 @@ export default function Home({ navigation }) {
                     source={require("../../src/images/ab.jpg")}
                     style={styles.image5}
                   />
+                  <Text style={styles.imgdesc}>Агуу удирдагч бүрт байх 3 чухал зүйл</Text>
           </View>
         <View style={styles.dd1}>
                   <Image
                     source={require("../../src/images/lec.png")}
                     style={styles.image5}
                   />
+                  <Text style={styles.imgdesc}>Илтгэлээ мартагдашгүй болгох 3 энгийн алхам</Text>
           </View>
         <View style={styles.dd1}>
                   <Image
                     source={require("../../src/images/off.jpg")}
                     style={styles.image5}
                   />
+                  <Text style={styles.imgdesc}>Шууд сурталчилгаагүйгээр компаниа сурталчлах арга</Text>
           </View>
       
         </ScrollView>
@@ -915,5 +907,14 @@ const styles = StyleSheet.create({
     width: 150,
     marginLeft:15,
     marginTop: 10,
+  },
+  imgdesc:{
+    color: "#fff",
+    // zIndex: 1,
+    position: "absolute",
+    fontSize: 17,
+    marginTop: 90,
+    marginLeft: 35,
+    fontWeight: 700,
   }
 });
