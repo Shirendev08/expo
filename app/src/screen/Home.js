@@ -868,7 +868,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   scroll4: {
-    height: 245,
+    height: 255,
   },
   scroll5: {
     height: 180,
