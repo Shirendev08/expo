@@ -33,6 +33,120 @@ export default function Help() {
     </SafeAreaView>
  
     
+      <ScrollView horizontal={true} style={styles.scroll2} showsVerticalScrollIndicator={false}>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/1.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 600}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>100% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/5.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>96% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/8.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>80% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/2.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>70% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/3.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>15% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/6.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>40% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/7.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text>55% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/8.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>0% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/9.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text>4% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/10.webp")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>1% уншсан</Text>
+          </View>
+          </View>
+          <View style={styles.sim2}> 
+          <Image
+                    source={require("../../src/images/1.jpg")}
+                    style={styles.image2}
+                  />
+                      <View style={styles.desc}>
+            <Text style={{fontWeight: 500}}>Нийгэм, Улс төр</Text>
+            <Text style={{color: 'grey'}}>11% уншсан</Text>
+          </View>
+          </View>
+         
+        </ScrollView>
+     
     </SafeAreaView>
   );
 }
@@ -67,5 +181,27 @@ const styles = StyleSheet.create({
     marginTop: 10,
     justifyContent: 'center',
     alignItems: 'center',
-  }
+  },
+  scroll2: {
+    height: 370,
+  },
+  sim2: {
+    width: 180,
+    height: 300,
+    borderRadius: 17,
+    flexDirection: "column",
+    marginLeft: 10,
+    marginTop: 10,
+  },
+  image2:{
+    width: 170,
+    height: 270,
+    borderRadius: 17,
+    flexDirection: "row",
+  },
+  desc:{
+    width: 150,
+    marginLeft:15,
+    marginTop: 10,
+  },
 });
