@@ -4,10 +4,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import HomeScreen from "./src/screen/Home";
-import HelpScreen from "./src/screen/Help";
+import BookScreen from "./src/screen/Book";
 import ProfileScreen from "./src/screen/Profile";
 import Header from "./src/screen/Header";
-import Pin from "./src/screen/Pin";
+import Cal from "./src/screen/Cal";
 import { Ionicons } from "@expo/vector-icons";
 
 const HomeStack = createNativeStackNavigator();
@@ -22,10 +22,10 @@ function HomeStackNavigation() {
       initialRouteName="home"
     >
       <HomeStack.Screen name="home" component={HomeScreen} />
-      <HomeStack.Screen name="real" component={HelpScreen} />
+      <HomeStack.Screen name="real" component={BookScreen} />
       <HomeStack.Screen name="profile" component={ProfileScreen} />
       <HomeStack.Screen name="Header" component={Header} />
-      <HomeStack.Screen name="Pin" component={Pin} />
+      <HomeStack.Screen name="Cal" component={Cal} />
       
     </HomeStack.Navigator>
   );
@@ -80,12 +80,12 @@ function BottomTabNavigation() {
         />
         <Tab.Screen
           name="Тусламж"
-          component={HelpScreen}
+          component={BookScreen}
           options={{ headerShown: false }}
         />
           <Tab.Screen
           name="Бай"
-          component={Pin}
+          component={Cal}
           options={{ headerShown: false }}
         />
         <Tab.Screen

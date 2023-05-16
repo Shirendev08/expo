@@ -11,6 +11,7 @@ import {
   navigation,
   FlatList,
 } from "react-native";
+import Cal from "./Cal";
 import React, { useRef, useEffect } from 'react';
 import {
   MaterialIcons,
@@ -48,10 +49,12 @@ export default function Home({ navigation }) {
       <ScrollView>
         <ScrollView horizontal={true} style={styles.scroll}>
           <View style={styles.sim3}>
+          <Pressable onPress={() => navigation.navigate("Cal")}>
           <Image
                     source={require("../../src/images/nc.jpg")}
                     style={styles.image3}
                   />
+                  </Pressable>
           </View>
         </ScrollView>
         <View>
