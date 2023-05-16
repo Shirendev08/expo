@@ -7,9 +7,7 @@ import HomeScreen from "./src/screen/Home";
 import HelpScreen from "./src/screen/Help";
 import ProfileScreen from "./src/screen/Profile";
 import Header from "./src/screen/Header";
-import Huwimed from "./src/screen/Huwimed";
 import Pin from "./src/screen/Pin";
-import Detail from "./src/screen/Details";
 import { Ionicons } from "@expo/vector-icons";
 
 const HomeStack = createNativeStackNavigator();
@@ -27,9 +25,8 @@ function HomeStackNavigation() {
       <HomeStack.Screen name="real" component={HelpScreen} />
       <HomeStack.Screen name="profile" component={ProfileScreen} />
       <HomeStack.Screen name="Header" component={Header} />
-      <HomeStack.Screen name="Huwi" component={Huwimed} />
       <HomeStack.Screen name="Pin" component={Pin} />
-      <HomeStack.Screen name="Detail" component={Detail} />
+      
     </HomeStack.Navigator>
   );
 }
@@ -46,6 +43,9 @@ function BottomTabNavigation() {
               iconName = focused ? "home" : "home";
             } else if (rn === "Тусламж") {
               iconName = focused ? "book" : "book";
+            }
+            else if (rn === "Бай") {
+              iconName = focused ? "earth" : "earth";
             }
              else if (rn === "Профайл") {
               iconName = focused
@@ -83,11 +83,17 @@ function BottomTabNavigation() {
           component={HelpScreen}
           options={{ headerShown: false }}
         />
+          <Tab.Screen
+          name="Бай"
+          component={Pin}
+          options={{ headerShown: false }}
+        />
         <Tab.Screen
           name="Профайл"
           component={ProfileScreen}
           options={{ headerShown: false }}
         />
+      
       </Tab.Navigator>
     </NavigationContainer>
   );
